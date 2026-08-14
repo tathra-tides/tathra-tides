@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tathra Tides – Where every stay feels like a reset.</title>
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="196x196" href="/images/android-chrome.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Stylish beachside retreat in the heart of Tathra. Luxury, comfort, and relaxation just steps from the sand and cafes." />
+<meta name="keywords" content="Tathra Accommodation, Sapphire Coast Accommodation, Merimbula Accommodation, Tathra Holiday Rental, Tathra Beach Stay, South Coast NSW Accommodation, Coastal Getaway Tathra, Tathra Apartment, Tathra Airbnb Alternative, Beach Retreat Tathra" />
+
+<!-- Google Site Verification -->
+<meta name="google-site-verification" content="xcO5Sp9mjbkW2otFS3dXQUNLyAyEIFdMfx0ubG5sVc4">
+
+<!-- Social share previews -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tathra Tides – Where every stay feels like a reset.">
+<meta property="og:description" content="Stylish beachside retreat in the heart of Tathra. Luxury, comfort, and relaxation just steps from the sand and cafes.">
+<meta property="og:image" content="https://tathratides.com/images/feature-sauna.jpg">
+<meta property="og:url" content="https://tathratides.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tathra Tides – Where every stay feels like a reset.">
+<meta name="twitter:description" content="Stylish beachside retreat in the heart of Tathra. Luxury, comfort, and relaxation just steps from the sand and cafes.">
+<meta name="twitter:image" content="https://tathratides.com/images/feature-sauna.jpg">
+
+<!-- Structured data for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "Tathra Tides",
+  "description": "Stylish two-bedroom beach retreat in the heart of Tathra with a private outdoor sauna, Balinese-inspired gardens, and BBQ deck.",
+  "telephone": "+61416663144",
+  "email": "tathratides@gmail.com",
+  "url": "https://tathratides.com/",
+  "image": "https://tathratides.com/images/feature-sauna.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "26 Edna Drive",
+    "addressLocality": "Tathra",
+    "addressRegion": "NSW",
+    "postalCode": "2550",
+    "addressCountry": "AU"
+  }
+}
+</script>
+
+<style>
+  :root {
+    --ink: #262626;
+    --ink-soft: #4a4a4a;
+    --line: #e7e3dc;
+  }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; color: var(--ink); line-height: 1.7; scroll-behavior: smooth; }
+  a { text-decoration: none; }
+  img { max-width: 100%; display: block; }
+
+  /* Hero */
+  .hero { height: 100vh; position: relative; overflow: hidden; }
+  .hero-slide { position: absolute; width: 100%; height: 100%; object-fit: cover; background-size: cover; background-position: center; transition: opacity 1.4s ease-in-out; }
+  .hero-slide.hidden { opacity: 0; }
+  .hero-content { position: relative; z-index: 2; text-align: center; color: #fff; top: calc(50% + 60px); transform: translateY(-50%); padding: 0 20px; }
+  .hero-content .logo-mark { width: 180px; margin: 0 auto 16px; opacity: 0; transform: translateY(-20px); transition: all 1s ease-out; }
+  .hero-content h1 { font-size: 3rem; margin-bottom: 10px; opacity: 0; transform: translateY(-20px); transition: all 1s ease-out; letter-spacing: 0.02em; }
+  .hero-content p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 20px; opacity: 0; transform: translateY(-20px); transition: all 1s ease-out 0.3s; line-height: 1.6; }
+  .hero-animate h1, .hero-animate p, .hero-animate .btn, .hero-animate .logo-mark { opacity: 1; transform: translateY(0); }
+
+  .btn { display: inline-block; padding: 12px 30px; background: #000; border-radius: 5px; font-weight: bold; color: #fff; opacity: 0; transform: translateY(-20px); transition: all 0.3s ease; }
+  .btn:hover { background: #333; }
+  .btn-outline { display: inline-block; padding: 11px 28px; background: transparent; color: var(--ink); border: 1.5px solid var(--ink); border-radius: 5px; font-weight: 600; transition: all 0.2s ease; margin-top: 28px; }
+  .btn-outline:hover { background: var(--ink); color: #fff; }
+
+  section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; text-align: center; border-top: 1px solid var(--line); opacity: 0; transform: translateY(40px); transition: all 1s ease-out; }
+  section:first-of-type { border-top: none; }
+  section.visible { opacity: 1; transform: translateY(0); }
+  h2 { text-align: center; margin-bottom: 8px; font-weight: 700; letter-spacing: 0.01em; }
+  .section-sub { text-align: center; color: var(--ink-soft); margin: 0 auto 30px; max-width: 60ch; }
+  .prose { max-width: 65ch; margin: 0 auto; color: var(--ink-soft); font-size: 1.05rem; text-align: left; }
+
+  .about { padding-bottom: 40px; }
+  .features { padding: 15px 20px 30px; border-top: none; }
+  .instagram { border-top: none; }
+  .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 24px; margin-top: 40px; }
+  .feature-card { border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: #fff; text-align: left; }
+  .feature-card .card-body { padding: 20px; }
+  .feature-card h3 { margin: 0 0 8px; }
+  .feature-card p { margin: 0; color: var(--ink-soft); }
+
+  /* Card photo gallery (flick-through) */
+  .card-gallery { position: relative; width: 100%; aspect-ratio: 4 / 3; background: #f2f0eb; overflow: hidden; touch-action: pan-y; }
+  .card-gallery .gallery-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.4s ease; }
+  .card-gallery .gallery-slide.active { opacity: 1; }
+  .card-gallery .gallery-arrow { position: absolute; top: 50%; transform: translateY(-50%); width: 32px; height: 32px; border-radius: 50%; background: rgba(0,0,0,0.45); color: #fff; border: none; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 16px; line-height: 1; }
+  .card-gallery .gallery-arrow:hover { background: rgba(0,0,0,0.7); }
+  .card-gallery .gallery-arrow.prev { left: 10px; }
+  .card-gallery .gallery-arrow.next { right: 10px; }
+  .card-gallery .gallery-dots { position: absolute; bottom: 10px; left: 0; right: 0; display: flex; justify-content: center; gap: 6px; }
+  .card-gallery .gallery-dots button { width: 7px; height: 7px; border-radius: 50%; border: none; background: rgba(255,255,255,0.55); padding: 0; cursor: pointer; }
+  .card-gallery .gallery-dots button.active { background: #fff; }
+  .card-gallery.single .gallery-arrow, .card-gallery.single .gallery-dots { display: none; }
+
+  .instagram, .google-reviews { padding: 30px 20px; max-width: 1200px; margin: 0 auto; text-align: center; border-top: none; }
+  .btn-book-stay { display: block; width: 100%; max-width: 380px; margin: 24px auto 0; padding: 12px 20px; box-sizing: border-box; }
+
+  footer { background: #000; color: #fff; text-align: center; padding: 40px 20px; }
+  footer a { color: #fff !important; text-decoration: underline; }
+  .social-icons { display: flex; justify-content: center; align-items: center; gap: 18px; margin-top: 20px; }
+  .social-icons a { display: inline-flex; text-decoration: none; opacity: 0.85; transition: opacity 0.2s ease; }
+  .social-icons a:hover { opacity: 1; }
+
+  @media(max-width:768px){ .hero-content h1 { font-size:2.2rem; } .hero-content p { font-size:1rem; } .prose { font-size: 1rem; } }
+
+  /* CloudBeds floating booking bar */
+  .float_bg2 { background-color: #000 !important; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <video class="hero-slide" src="images/hero-main.mp4" autoplay muted loop playsinline></video>
+
+  <div class="hero-content">
+    <img class="logo-mark" src="images/logo.svg" alt="Tathra Tides Coastal Apartments logo">
+    <h1>Tathra Tides</h1>
+    <p>Where every stay feels like a reset.</p>
+    <a href="https://us2.cloudbeds.com/en/reservation/Q6YBhf" class="btn">Book Now</a>
+  </div>
+</header>
+
+<section class="about">
+  <h2>About Tathra Tides</h2>
+  <p class="prose">Tathra Tides is a stylish two-bedroom retreat in the heart of Tathra, just steps from the beach and the town's favourite cafés. Wander through Balinese-inspired gardens, soak in the private outdoor sauna, or fire up the BBQ as the sun goes down. Coastal trails, mountain biking, and some of the best surf on the Sapphire Coast are all on your doorstep.</p>
+  <div style="text-align:center;"><a href="https://us2.cloudbeds.com/en/reservation/Q6YBhf" class="btn-outline">Find Out More</a></div>
+</section>
+
+<section class="features" id="space">
+    <h2>The Space &amp; Amenities</h2>
+    <p class="section-sub">A closer look at where you'll be staying.</p>
+    <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="card-gallery" data-gallery>
+            <img class="gallery-slide active" loading="lazy" src="images/feature-living-room.jpg" alt="Living room with sofa and artwork">
+            <img class="gallery-slide" loading="lazy" src="images/gallery6.jpg" alt="Kitchen with island bench">
+            <button class="gallery-arrow prev" type="button" aria-label="Previous photo">&#10094;</button>
+            <button class="gallery-arrow next" type="button" aria-label="Next photo">&#10095;</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <h3>Living Area</h3>
+            <p>Light-filled lounge for quiet nights in and a fully equipped kitchen for easy meal preparation, with tea and coffee provided.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-gallery" data-gallery>
+            <img class="gallery-slide active" loading="lazy" src="images/feature-bedroom.jpg" alt="Bedroom one with queen bed">
+            <img class="gallery-slide" loading="lazy" src="images/gallery9.jpg" alt="Bedroom two with bunk bed">
+            <button class="gallery-arrow prev" type="button" aria-label="Previous photo">&#10094;</button>
+            <button class="gallery-arrow next" type="button" aria-label="Next photo">&#10095;</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <h3>Sleeping Arrangements</h3>
+            <p>Bedroom 1 – Queen bed<br>Bedroom 2 – Bunk bed (double bottom, single top). Linen and towels provided.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-gallery" data-gallery>
+            <img class="gallery-slide active" loading="lazy" src="images/feature-sauna.jpg" alt="Private outdoor sauna and daybed">
+            <img class="gallery-slide" loading="lazy" src="images/gallery3.jpg" alt="Outdoor shower among palms" style="object-position: center top;">
+            <img class="gallery-slide" loading="lazy" src="images/gallery10.jpg" alt="BBQ and deck dining area">
+            <img class="gallery-slide" loading="lazy" src="images/gallery1.jpg" alt="Garden entrance gate">
+            <img class="gallery-slide" loading="lazy" src="images/garden-path2.jpg" alt="Garden path under banana leaves">
+            <img class="gallery-slide" loading="lazy" src="images/coffee-bar.jpg" alt="Guest enjoying coffee at the outdoor bar">
+            <img class="gallery-slide" loading="lazy" src="images/kids-play.jpg" alt="Family relaxing in the garden and BBQ area">
+            <button class="gallery-arrow prev" type="button" aria-label="Previous photo">&#10094;</button>
+            <button class="gallery-arrow next" type="button" aria-label="Next photo">&#10095;</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <h3>Private Facilities</h3>
+            <p>Outdoor sauna, shower, BBQ, and tropical gardens.</p>
+          </div>
+        </div>
+
+    </div>
+
+    <a href="https://us2.cloudbeds.com/en/reservation/Q6YBhf" class="btn btn-book-stay" style="opacity:1; transform:none;">Book Your Stay</a>
+</section>
+
+<section class="instagram">
+  <!-- LightWidget WIDGET -->
+  <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+  <iframe src="https://cdn.lightwidget.com/widgets/70d3a6647c895966ad2b1f4a1ffae3c0.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+</section>
+
+<section class="google-reviews">
+  <h2>What Guests Are Saying on Google</h2>
+  <div id="featurable-565ba0b2-27ac-4647-8975-3bfd82c9fb1b" data-featurable-async></div>
+  <script src="https://featurable.com/assets/bundle.js" defer charset="UTF-8"></script>
+</section>
+
+<!-- Cloudbeds Floating Widget -->
+<script src="https://us2.cloudbeds.com/widget/load/Q6YBhf/float?newWindow=1"></script>
+
+<footer>
+  <h2>Contact Us</h2>
+  <p>Phone: <a href="tel:0416663144">0416 663 144</a> | Email: <a href="mailto:tathratides@gmail.com">tathratides@gmail.com</a></p>
+  <p>Address: 26 Edna Drive, Tathra NSW 2550</p>
+  <p>&copy; 2025 Tathra Tides</p>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/tathra_tides" target="_blank" rel="noopener" aria-label="Tathra Tides on Instagram">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" stroke="#fff" stroke-width="1.6"/><circle cx="12" cy="12" r="4.2" stroke="#fff" stroke-width="1.6"/><circle cx="17.4" cy="6.6" r="1.1" fill="#fff"/></svg>
+    </a>
+    <a href="https://www.facebook.com/61561705391380" target="_blank" rel="noopener" aria-label="Tathra Tides on Facebook">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0,-3.15)"><path d="M15 8.5h2V5.3c-.35-.05-1.55-.15-2.95-.15-2.92 0-4.92 1.83-4.92 5.2v2.75H6.1V17h3.03v8h3.4v-8h2.9l.46-3.9h-3.36v-2.4c0-1.13.3-1.9 1.87-1.9z" fill="#fff"/></g></svg>
+    </a>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('load', () => {
+    document.querySelector('.hero-content').classList.add('hero-animate');
+  });
+
+  const sections = document.querySelectorAll('section');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+  sections.forEach(section => observer.observe(section));
+
+  // Card photo carousels (flick-through)
+  document.querySelectorAll('[data-gallery]').forEach(gallery => {
+    const slides = Array.from(gallery.querySelectorAll('.gallery-slide'));
+    const dotsWrap = gallery.querySelector('.gallery-dots');
+    const prevBtn = gallery.querySelector('.gallery-arrow.prev');
+    const nextBtn = gallery.querySelector('.gallery-arrow.next');
+    let index = 0;
+
+    if (slides.length <= 1) { gallery.classList.add('single'); return; }
+
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.setAttribute('aria-label', 'Go to photo ' + (i + 1));
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(dot);
+    });
+    const dots = Array.from(dotsWrap.children);
+
+    function goTo(i) {
+      slides[index].classList.remove('active');
+      dots[index].classList.remove('active');
+      index = (i + slides.length) % slides.length;
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+    }
+
+    prevBtn.addEventListener('click', () => goTo(index - 1));
+    nextBtn.addEventListener('click', () => goTo(index + 1));
+
+    let touchStartX = null;
+    gallery.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    gallery.addEventListener('touchend', e => {
+      if (touchStartX === null) return;
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 40) goTo(index + (dx < 0 ? 1 : -1));
+      touchStartX = null;
+    });
+  });
+
+  // Recolor the Featurable "Write a review" button to match the site's black buttons
+  (function () {
+    const tryStyle = () => {
+      const wrapper = document.querySelector('#featurable-565ba0b2-27ac-4647-8975-3bfd82c9fb1b .shadow-wrapper');
+      if (!wrapper || !wrapper.shadowRoot) return false;
+      if (wrapper.shadowRoot.getElementById('tt-review-btn-override')) return true;
+      const style = document.createElement('style');
+      style.id = 'tt-review-btn-override';
+      style.textContent = '.summary-bar__btn { background-color: #000 !important; border-color: #000 !important; color: #fff !important; }';
+      wrapper.shadowRoot.appendChild(style);
+      return true;
+    };
+    if (!tryStyle()) {
+      const interval = setInterval(() => { if (tryStyle()) clearInterval(interval); }, 300);
+      setTimeout(() => clearInterval(interval), 15000);
+    }
+  })();
+</script>
+
+</body>
+</html>
